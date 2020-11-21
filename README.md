@@ -3,7 +3,7 @@
 <br>
 <br>
 <br>
-■ VIEW  (サーバー:Heroku     DB:ClearDB MySQL)<br>
+■ VIEW  (サーバー:Heroku　　DB:ClearDB MySQL)<br>
 https://restaurant-app-rdb-junji.herokuapp.com/index.php
 <br>
 <br>
