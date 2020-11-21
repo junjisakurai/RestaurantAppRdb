@@ -3,7 +3,7 @@
 <br>
 <br>
 <br>
-■ VIEW  (Heroku)<br>
+■ VIEW  (サーバー:Heroku  DB:ClearDB MySQL)<br>
 https://restaurant-app-rdb-junji.herokuapp.com/index.php
 <br>
 <br>
@@ -24,38 +24,31 @@ show.php
 注文内容確認画面
 confirm.php
 
-★スタイルシート ---------------
+★スタイルシート ----------------
 stylesheet.css
 
 ■topへ戻る機能  ----------------
 index.js
 
-●処理クラス    --------------------------------
-■メニュークラス
-メニュー(スーパークラス)
-menu.php
-  |
-  |--フード(メニュー継承)
-  |   food.php
-  |
-  |--ドリンク(メニュー継承)
-      drink.php
-          |
-          |--アルコール(ドリンク継承)
-             alcohol.php
-             
-■レビュークラス
-review.php
-
-■ユーザークラス
-user.php
-
-■チャート      --------------------------------
+■チャート      -----------------
 チャート描画スクリプト
 Chart.js
 チャートデータ作成
 chartData.php
 
-●データクラス   --------------------------------
-data.php
+●DB関連    ----------------------------------------
+■SP (ストアドプロシージャ)
+sp_menu   (メニューデータ関連のSP)
+sp_review (レビューデータ関連のSP)
+
+■SP呼出 (ストアドプロシージャ呼出)
+call_sp_menu.php   (メニューSP呼出)
+call_sp_review.php (レビューSP呼出)
+
+●データベース[Mysql]   ---------------------
+menu_m  (メニューマスタ)
+drink   (ドリンクテーブル)
+food    (フードテーブル)
+user_m  (ユーザーマスタ)
+review  (レビューテーブル)
 </pre>
